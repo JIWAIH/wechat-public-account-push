@@ -41,7 +41,7 @@ export const config = {
     poetry: false,
 
     /** 星座运势 */
-    horoscope: false,
+    horoscope: true,
 
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -96,15 +96,23 @@ export const config = {
     },
     {
       name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      id: "oXUyd56snyJhNkAo4R8yLtRSMmAk",
+      useTemplateId: "uZFgAGifNZl-PcWQ8i6ieeGazcIg78s-8YZELn9p7UE",
+      province: "贵州",
+      city: "贵阳",
+      horoscopeDate: '09-07',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+      festivals: [
+        {"type": "生日", "name": "一一乖乖！", "year": "2001", "date": "09-07"},
+        {"type": "节日", "name": "在一起纪念日", "year": "2022", "date": "08-04"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "小糕", "year": "2001", "date": "09-20"},
+        {"type": "节日", "name": "相识纪念日", "year": "2022", "date": "07-26"},
+      ],
+      customizedDateList: [ 
+        {"keyword": "love_day", date: "2022-08-04"},
+      ]
     },
     {
       name: "老婆2",
